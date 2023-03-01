@@ -1,0 +1,12 @@
+@import '../var';
+@import '../mixin';
+
+.promo {
+    padding-top: 5rem;
+
+    &__header {
+        @include flexBetweenCenter;
+        margin-bottom: 15px;
+
+    }
+}

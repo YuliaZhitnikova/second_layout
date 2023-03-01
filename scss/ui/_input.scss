@@ -1,0 +1,13 @@
+@import '../var';
+@import '../mixin';
+
+.input {
+    background-color: $white-color;
+    border-radius: 30px;
+    border: inherit;
+    padding: 11px 25px 10px;
+
+    &::placeholder {
+        color: #C4C4C4;
+    }
+}

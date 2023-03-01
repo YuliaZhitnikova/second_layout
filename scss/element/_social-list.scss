@@ -1,0 +1,20 @@
+@import '../var';
+@import '../mixin';
+
+.social-list {
+    display: flex;
+
+    li {
+        margin-right: 15px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            border: 1px solid $accent-color;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../var';
+@import '../mixin';
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    color: $white-color;
+
+    &__item {
+        @include flexBetweenCenter;
+        width: calc(50% - 20px);
+        background-color: $accent-color;
+        padding: 35px;
+
+        p {
+            color: $white-color;
+        }
+    }
+
+    &__text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin-right: 10px;
+
+        &_small {
+            width: 40%;
+        }
+
+        &>* {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
